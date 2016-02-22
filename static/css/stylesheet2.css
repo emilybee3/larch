@@ -1,0 +1,257 @@
+body {
+    background-image:url("img/blue_stars.jpg");
+    background-repeat:repeat;
+}
+
+
+.img-circle  {
+   border-radius: 50%;
+   -webkit-transform:scale(0.7);
+   -moz-transform:scale(0.7);
+   -ms-transform:scale(0.7);
+   transform:scale(0.7); 
+}
+
+#turblesPic {
+    border-radius: 50%;
+     -webkit-transform:scale(0.7);
+   -moz-transform:scale(0.7);
+   -ms-transform:scale(0.7);
+   transform:scale(0.7); 
+}
+
+#brockPic {
+    margin-top:-10px;
+}
+h3 {
+margin-top:-20px;
+text-align: center;
+color:white;
+font-family:"Patrick Hand SC";
+font-size: 40px;
+}
+
+
+
+p {
+text-align: center;
+color:white;
+font-family:"Crafty Girls";
+
+font-size: 15px;
+}
+
+.tardisMenu {
+    /*background-color: orange;*/
+   /* position:absolute;
+    left:50%;*/
+    width: 600px;
+    height: 870px;
+    /*margin-top: -150px;*/
+    /*margin-left: -300px;*/
+    -webkit-transform:scale(0.7);
+    -moz-transform:scale(0.7);
+    -ms-transform:scale(0.7);
+    transform:scale(0.7);
+    margin-top:-170px;
+    }
+
+
+    .tardis.perspective #door {
+        /*background-color: orange;*/
+         /*margin-top:180px*/
+        width: 180px;
+        height: 900px;
+        position: absolute;
+        box-sizing: border-box;
+        z-index: 100;
+    }
+
+
+    nav.navbar {
+        /*display: none;*/
+        top: 30%;
+        left:25%;
+        margin-right: -10%;
+        width: 180px;
+        height: 100px;
+        position: absolute;
+        font-size: 40px;
+    }
+
+    #nav {
+        /*background-color: gray;*/
+        padding-top: 300px;
+        padding-left: 67px;
+        margin-left: 67px;
+        /*margin-right: -10%;*/
+        position:absolute;
+        width: 180px;
+        height: 900px;
+        z-index: 50;
+        font-size: 30px;
+    }
+
+    .perspective{
+        /*background-color:blue;*/
+        background: url("img/tardis_background.png");            
+        background-repeat: no-repeat;
+                width: 600px;
+                height: 1137px;
+                -webkit-perspective: 450;
+                border-radius: 3px;
+                box-sizing: border-box;
+                z-index: 100;
+            }
+
+
+            
+    .thumb /*CHANGES DIV FOR MOUSOVER OF DOOR*/{
+            /*background-color: green;*/
+            background: url("img/door2.png");
+                background-repeat: no-repeat;
+                top: 23.5%;
+                left:17%;
+                margin-right: -10%;
+                width: 180px;
+                height: 900px;
+                position: absolute;
+                box-sizing: border-box;
+                box-shadow: 0 0 0 10px rgba(255, 255, 255, .0) inset;
+                transition: 1s transform linear;
+                transform-origin: left;
+                cursor: pointer;
+                z-index: 100;
+            }
+
+            
+    .thumbOpened {
+        /*background-color:red;*/
+        transform: rotateY(90deg);
+        transform-origin: 8px;
+        transition: .5s linear;
+    }
+
+    @keyframes go {
+      100%{
+        opacity:1;
+        transform:rotateY(0deg);
+      }
+    }
+
+    h2 {
+        position:center;
+        text-align: center;
+        font-size: 50px;
+        color:white;
+        font-family:"Patrick Hand SC";
+        text-shadow: 3px 3px #000000;
+    }
+
+    ul {
+        padding-top: 10px;
+        text-align: center;
+        font-size: 60px;
+        font-family: "Crafty Girls";
+        color:white;
+        text-shadow: 3px 3px #000000;
+
+    }
+    
+    a {
+        color:white;
+        z-index: 100;
+        padding-left: 10px
+    }
+    
+    a:hover {
+        color:white;
+        text-shadow: 4px 4px #000000;
+        z-index: 100;
+    }
+
+    .grow {
+        font-size: 80px;
+        transition: all .2s ease-in-out;
+        transform-origin: 10%;
+        color:white;
+        z-index: 100;
+
+    }
+
+
+
+    .hidden {
+        opacity: 0;
+    }
+
+
+
+
+    .controlRoom {
+        display: block;
+        background-image:url("img/tardi/1.png");
+        z-index: 0;
+        top: 350px;
+        left:20%;
+        margin-right: -10%;
+        width: 180px;
+        height: 643px;
+        position: absolute;
+        /*transition: all 2s ease-out;*/
+        transition-delay: 1s;
+        -webkit-transform:scale(1.4);
+        -moz-transform:scale(1.4);
+        -ms-transform:scale(1.4);
+        transform:scale(1.4);      
+    }
+
+    .copyrite {
+        position:relative;
+        margin-top:200px;
+        font-family:"Patrick Hand SC";
+    }
+
+.page-header {
+    text-align: center;
+    color:white;
+    font-family:"Patrick Hand SC";
+    margin-top:10px;
+    border-bottom:none;
+    margin-left:200px;
+}
+
+.arch {
+    font-family: "Crafty Girls";
+}
+
+.portfolio-item {
+        margin-top:-50px;
+
+}
+
+    @-moz-keyframes materialize {
+    0% { opacity: 100%; }
+    50% { opacity: 0; }
+    100% { opacity: 100%; }
+    }
+    @-webkit-keyframes materialize {
+    0% { opacity: 100%; }
+    50% { opacity: 0; }
+    100% { opacity: 100%; }
+    }
+    @keyframes materialize {
+    0% { opacity: 100%; }
+    50% { opacity: 0; }
+    100% { opacity: 100%; }
+    }
+
+
+
+    .tardisDematerialize:hover {
+        -moz-animation: materialize 3s 3 alternate ease-in-out;
+        -webkit-animation: materialize 3s 3 alternate ease-in-out;
+        animation: materialize 3s 3 alternate ease-in-out;
+        /*display: block;*/
+        /*margin: 0 auto;*/
+    }
