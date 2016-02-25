@@ -6,17 +6,17 @@ body {
 
 .img-circle  {
    border-radius: 50%;
-  /* -webkit-transform:scale(0.7);
+   -webkit-transform:scale(0.7);
    -moz-transform:scale(0.7);
-   -ms-transform:scale(0.7);*/
+   -ms-transform:scale(0.7);
    transform:scale(0.7); 
 }
 
 #turblesPic {
     border-radius: 50%;
-    /* -webkit-transform:scale(0.7);
+     -webkit-transform:scale(0.7);
    -moz-transform:scale(0.7);
-   -ms-transform:scale(0.7)*/;
+   -ms-transform:scale(0.7);
    transform:scale(0.7); 
 }
 
@@ -49,9 +49,9 @@ font-size: 15px;
     height: 870px;
     /*margin-top: -150px;*/
     /*margin-left: -300px;*/
-   /* -webkit-transform:scale(0.7);
-    -moz-transform:scale(0.5);
-    -ms-transform:scale(0.7);*/
+    -webkit-transform:scale(0.7);
+    -moz-transform:scale(0.7);
+    -ms-transform:scale(0.7);
     transform:scale(0.7);
     margin-top:-170px;
     }
@@ -98,36 +98,41 @@ font-size: 15px;
         background-repeat: no-repeat;
                 width: 600px;
                 height: 1137px;
-                -webkit-perspective: 450;
+                -webkit-perspective: 450px;
+                -moz-perspective: 450px;
                 border-radius: 3px;
                 box-sizing: border-box;
-                z-index: 100;
+                z-index: 0;
+                position:relative;
             }
 
 
             
     .thumb /*CHANGES DIV FOR MOUSOVER OF DOOR*/{
             /*background-color: green;*/
+            position: absolute;
             background: url("img/door2.png");
-                background-repeat: no-repeat;
-                top: 23.5%;
-                left:17%;
-                margin-right: -10%;
-                width: 180px;
-                height: 900px;
-                position: absolute;
-                box-sizing: border-box;
-                box-shadow: 0 0 0 10px rgba(255, 255, 255, .0) inset;
-                transition: 1s transform linear;
-                transform-origin: left;
-                cursor: pointer;
-                z-index: 100;
+            background-repeat: no-repeat;
+            top: 23.5%;
+            left:17%;
+            margin-right: -10%;
+            width: 180px;
+            height: 900px;
+            box-sizing: border-box;
+            box-shadow: 0 0 0 10px rgba(255, 255, 255, .0) inset;
+            transition: 1s transform linear;
+            transform-origin: left;
+            -moz-transform-origin: left;
+
+            cursor: pointer;
+            z-index: 1000;
             }
 
             
     .thumbOpened {
         /*background-color:red;*/
         transform: rotateY(90deg);
+        -moz-transform: rotateY(90deg);
         transform-origin: 8px;
         transition: .5s linear;
     }
@@ -136,6 +141,7 @@ font-size: 15px;
       100%{
         opacity:1;
         transform:rotateY(0deg);
+        -moz-transform:rotateY(0deg);
       }
     }
 
@@ -191,7 +197,7 @@ font-size: 15px;
     .controlRoom {
         display: block;
         background-image:url("img/tardi/1.png");
-        z-index: 0;
+        z-index: -10;
         top: 350px;
         left:20%;
         margin-right: -10%;
@@ -200,9 +206,9 @@ font-size: 15px;
         position: absolute;
         /*transition: all 2s ease-out;*/
         transition-delay: 1s;
-       /* -webkit-transform:scale(1.4);
+        -webkit-transform:scale(1.4);
         -moz-transform:scale(1.4);
-        -ms-transform:scale(1.4);*/
+        -ms-transform:scale(1.4);
         transform:scale(1.4);      
     }
 
@@ -249,9 +255,10 @@ font-size: 15px;
 
 
     .tardisDematerialize:hover {
-        /*-moz-animation: materialize 3s 3 alternate ease-in-out;*/
-        /*-webkit-animation: materialize 3s 3 alternate ease-in-out;*/
+        -moz-animation: materialize 3s 3 alternate ease-in-out;
+        -webkit-animation: materialize 3s 3 alternate ease-in-out;
         animation: materialize 3s 3 alternate ease-in-out;
         /*display: block;*/
         /*margin: 0 auto;*/
     }
+
