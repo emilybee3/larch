@@ -120,8 +120,8 @@ font-size: 15px;
             height: 900px;
             box-sizing: border-box;
             box-shadow: 0 0 0 10px rgba(255, 255, 255, .0) inset;
-            transition: 1s transform linear;
-            transform-origin: left;
+            -webkit-transition: 1s transform linear;
+            -webkit-transform-origin: left;
             -moz-transform-origin: left;
 
             cursor: pointer;
@@ -133,6 +133,7 @@ font-size: 15px;
         /*background-color:red;*/
         transform: rotateY(90deg);
         -moz-transform: rotateY(90deg);
+        -webkit-transform: rotateY(90deg);
         transform-origin: 8px;
         transition: .5s linear;
     }
